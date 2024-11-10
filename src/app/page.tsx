@@ -48,14 +48,14 @@
 import { useState, useEffect } from "react";
 
 export default function Coin_Market() {
-  const api = "0ba578ef5b6f063687fab67e030ac4de"; 
+  const api = ""; 
   const [selected_coin, setSelected_coin] = useState<string>("BTC");
   const [rates, setRates] = useState<Record<string, number>>({});
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch(`http://api.coinlayer.com/live?access_key=${api}`)
+    fetch(`http://api.coinlayer.com/live?access_key=0ba578ef5b6f063687fab67e030ac4de`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
