@@ -55,7 +55,7 @@ export default function Coin_Market() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch(`http://api.coinlayer.com/live?access_key=0ba578ef5b6f063687fab67e030ac4de`)
+    fetch(`https://api.coinlayer.com/live?access_key=${api}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
