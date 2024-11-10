@@ -48,7 +48,7 @@
 import { useState, useEffect } from "react";
 
 export default function Coin_Market() {
-  const api = ""; 
+  const api = "0ba578ef5b6f063687fab67e030ac4de"; 
   const [selected_coin, setSelected_coin] = useState<string>("BTC");
   const [rates, setRates] = useState<Record<string, number>>({});
   const [loading, setLoading] = useState<boolean>(true);
