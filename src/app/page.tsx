@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 
 export default function Coin_Market() {
+  
   const api = "e586d121b4b369b5e23e71b31e7b72cf"; 
   const [selected_coin, setSelected_coin] = useState<string>("BTC");
   const [rates, setRates] = useState<Record<string, number>>({});
